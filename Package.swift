@@ -23,6 +23,12 @@ let package = Package(
     .library(
       name: "GoogleMobileAds",
       targets: ["GoogleMobileAdsTarget"]
+    ),
+    .library(
+        name: "AppLovinMediationGoogleAdapter",
+        targets: [
+            "AppLovinMediationGoogleAdapterWrapper",
+        ]
     )
   ],
   dependencies: [
@@ -47,5 +53,23 @@ let package = Package(
         "https://dl.google.com/googleadmobadssdk/5b3e79fb08b87eee/googlemobileadsios-spm-12.3.0.zip",
       checksum: "5b3e79fb08b87eee0e18f8bb5bba67c5e7a0d37a946236a3951759ff4c86eabf"
     ),
+    .target(
+        name: "AppLovinMediationGoogleAdapterWrapper",
+        dependencies: [
+            .target(name: "AppLovinMediationGoogleAdapterTarget"),
+            .target(name: "AppLovinSDKTarget")
+        ],
+        path: "AppLovinMediationGoogleAdapterWrapper"
+    ),
+    .binaryTarget(
+        name: "AppLovinMediationGoogleAdapterTarget",
+        url: "https://artifacts.applovin.com/ios/com/applovin/mediation/google-adapter/AppLovinMediationGoogleAdapter-12.3.0.0.zip",
+        checksum: "a5bb2f5e862bb880fa74291fd3282fdff6968a968351e09e75162a90f5362692"
+    ),
+    .binaryTarget(
+        name: "AppLovinSDKTarget",
+        url: "https://artifacts.applovin.com/ios/com/applovin/applovin-sdk/applovin-ios-sdk-13.0.0.zip",
+        checksum: "4e37fddffdbfc82820ecbeaf3ac5b06f74ebb8c2d3ad42ff1ea93c73c34948c8"
+    )
   ]
 )
