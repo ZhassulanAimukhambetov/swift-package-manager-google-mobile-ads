@@ -36,7 +36,8 @@ let package = Package(
       name: "GoogleUserMessagingPlatform",
       url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
       "1.1.0"..<"3.0.0"
-    )
+    ),
+    .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package", .upToNextMinor(from: "13.0.1"))
   ],
   targets: [
     .target(

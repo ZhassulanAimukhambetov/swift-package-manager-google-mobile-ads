@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "AppLovinSDK",
+        "repositoryURL": "https://github.com/AppLovin/AppLovin-MAX-Swift-Package",
+        "state": {
+          "branch": null,
+          "revision": "0dcd5f06ffc9b4f1b17e8e66ba8fc22846c9f19e",
+          "version": "13.0.1"
+        }
+      },
+      {
         "package": "GoogleUserMessagingPlatform",
         "repositoryURL": "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
         "state": {
