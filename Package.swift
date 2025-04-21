@@ -35,7 +35,7 @@ let package = Package(
     .package(
       name: "GoogleUserMessagingPlatform",
       url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
-      "1.1.0"..<"4.0.0"
+      "1.1.0"..<"3.0.0"
     )
   ],
   targets: [
@@ -50,8 +50,8 @@ let package = Package(
     .binaryTarget(
       name: "GoogleMobileAds",
       url:
-        "https://dl.google.com/googleadmobadssdk/5b3e79fb08b87eee/googlemobileadsios-spm-12.3.0.zip",
-      checksum: "5b3e79fb08b87eee0e18f8bb5bba67c5e7a0d37a946236a3951759ff4c86eabf"
+        "https://dl.google.com/googleadmobadssdk/174c3d7fc6c1b4eb/googlemobileadsios-spm-11.12.0.zip",
+      checksum: "174c3d7fc6c1b4eb9a4795c584659567bd19fe8cfadb35af5bc5f723e4251e8d"
     ),
     .target(
         name: "AppLovinMediationGoogleAdapterWrapper",
@@ -63,8 +63,8 @@ let package = Package(
     ),
     .binaryTarget(
         name: "AppLovinMediationGoogleAdapterTarget",
-        url: "https://artifacts.applovin.com/ios/com/applovin/mediation/google-adapter/AppLovinMediationGoogleAdapter-12.3.0.0.zip",
-        checksum: "a5bb2f5e862bb880fa74291fd3282fdff6968a968351e09e75162a90f5362692"
+        url: "https://artifacts.applovin.com/ios/com/applovin/mediation/google-adapter/AppLovinMediationGoogleAdapter-11.12.0.0.zip",
+        checksum: "08af5abaf4091e43f227648905c44a4e74b7edbd1ce003bef6869bfad4aa8ffa"
     ),
     .binaryTarget(
         name: "AppLovinSDKTarget",
