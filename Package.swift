@@ -57,7 +57,7 @@ let package = Package(
         name: "AppLovinMediationGoogleAdapterWrapper",
         dependencies: [
             .target(name: "AppLovinMediationGoogleAdapterTarget"),
-            .target(name: "AppLovinSDKTarget")
+            .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package")
         ],
         path: "AppLovinMediationGoogleAdapterWrapper"
     ),
@@ -65,11 +65,6 @@ let package = Package(
         name: "AppLovinMediationGoogleAdapterTarget",
         url: "https://artifacts.applovin.com/ios/com/applovin/mediation/google-adapter/AppLovinMediationGoogleAdapter-11.12.0.0.zip",
         checksum: "08af5abaf4091e43f227648905c44a4e74b7edbd1ce003bef6869bfad4aa8ffa"
-    ),
-    .binaryTarget(
-        name: "AppLovinSDKTarget",
-        url: "https://artifacts.applovin.com/ios/com/applovin/applovin-sdk/applovin-ios-sdk-13.0.0.zip",
-        checksum: "4e37fddffdbfc82820ecbeaf3ac5b06f74ebb8c2d3ad42ff1ea93c73c34948c8"
     )
   ]
 )
